@@ -1,0 +1,25 @@
+<div class="card h-100 border-0 shadow card-nexus">
+
+  <img
+    [src]="imagePathCard"
+    class="card-img-top"
+    [alt]="tituloCard">
+
+  <div class="card-body d-flex flex-column">
+
+    <h5 class="card-title fw-bold text-white">
+      {{ tituloCard }}
+    </h5>
+
+    <p class="card-text text-secondary flex-grow-1">
+      {{ textoCorpo }}
+    </p>
+
+    <button
+      class="btn btn-outline-info w-100">
+      {{ textoBotao }}
+    </button>
+
+  </div>
+
+</div>

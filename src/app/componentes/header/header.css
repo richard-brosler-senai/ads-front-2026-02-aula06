@@ -1,0 +1,11 @@
+header {
+  background:
+    linear-gradient(
+      135deg,
+      #080816,
+      #111135,
+      #26125e
+    );
+
+  border-bottom: 1px solid #662dff;
+}

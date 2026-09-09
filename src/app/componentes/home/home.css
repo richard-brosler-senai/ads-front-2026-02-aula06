@@ -1,0 +1,24 @@
+.hero {
+  min-height: 420px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    radial-gradient(
+      circle at 80% 40%,
+      rgba(109, 40, 217, 0.35),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(0, 229, 255, 0.15),
+      transparent 30%
+    ),
+    #080816;
+}
+
+.text-info {
+  text-shadow:
+    0 0 15px rgba(69, 234, 255, 0.35);
+}

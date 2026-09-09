@@ -1,0 +1,16 @@
+.menu-nexus {
+  background-color: rgba(8, 8, 22, 0.96);
+  border-bottom: 1px solid #39206f;
+}
+
+.nav-link {
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #45eaff;
+}
+
+.nav-link.active {
+  color: #45eaff !important;
+}
