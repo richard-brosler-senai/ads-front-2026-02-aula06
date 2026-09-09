@@ -10,6 +10,7 @@ import { Component, Input } from '@angular/core';
 export class CardComponent {
 
   @Input() imagePathCard: string = '';
+  @Input() textoImgAlt: string = '';
   @Input() tituloCard: string = '';
   @Input() textoCorpo: string = '';
   @Input() textoBotao: string = '';
