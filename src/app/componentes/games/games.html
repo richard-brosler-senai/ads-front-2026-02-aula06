@@ -1,0 +1,32 @@
+<!-- Interpolation Binding -->
+<h3>Bem vindo a página dos {{titulo}}</h3>
+<!-- Property Binding -->
+<div>
+    <img [src]="imagem" class="logo-senai">
+</div>
+<!-- Event binding -->
+ <button (click)="curtir()">Curtir</button>
+ <p>Curtidas: {{curtidas}} </p>
+<!-- Two-way Binding -->
+<div>
+    <label for="nome">Digite seu nome: </label>
+    <input type="text" [(ngModel)]="nome">
+    <p>Bem vindo {{nome}}!</p>
+</div>
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            @for (item of items; track $index) {
+            <!-- CARD 1 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <app-card
+                    [imagePathCard]="item.imagePathCard"
+                    [tituloCard]="item.tituloCard"
+                    [textoCorpo]="item.textoCorpo"
+                    [textoBotao]="item.textoBotao">
+                </app-card>
+            </div>
+            }
+        </div>
+    </div>
+</section>
