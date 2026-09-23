@@ -1,0 +1,22 @@
+<div [ngClass]="{'container': true, 'login-card': true}">
+    <!-- Se Logado -->
+    <div *ngIf="logado else naologado">
+        <h2>Bem vindo ao sistema</h2>
+        <button class="btn btn-danger" (click)="deslogar()">Logoff</button>
+    </div>
+    <!-- Se não logado -->
+    <ng-template #naologado>
+        <div>
+            <label for="login" class="form-label">Login:</label>
+            <input type="text" class="form-control" [(ngModel)]="login">
+        </div>
+        <div>
+            <label for="senha" class="form-label">Senha:</label>
+            <input type="password" class="form-control" [(ngModel)]="senha">
+        </div>
+        <div>
+            <br>
+            <button class="btn btn-primary" (click)="logar()">Enviar</button>
+        </div>
+    </ng-template>
+</div>
